@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+* {
+	margin: 0;
+	outline: 0;
+}
+::selection {
+	background-color: rgb(255, 80, 80);
+}
+body{
+    font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+}
+#menu {
+	display: flex;
+	padding: 2%;
+	justify-content: space-between;
+}
+#menu a {
+	text-decoration: none;
+	color: rgb(167, 167, 167);
+}
+#menu b {
+	text-decoration: none;
+	color: rgb(255, 80, 80);
+}
+#menu-items {
+	width: 30vw;
+}
+#menu-items a {
+	text-decoration: none;
+	color: rgb(167, 167, 167);
+	padding: 2% 5%;
+}
+#menu a:visited {
+	color: rgb(167, 167, 167);
+}
+#menu-items a:hover {
+	color: rgb(255, 80, 80);
+	border-bottom: 2px solid rgb(255, 80, 80);
+}
+/* Principal */
+section {
+	margin-top: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 10%;
+}
+section .info {
+	margin-left: 2%;
+	width: 20vw;
+	font-size: 1.5vw;
+}
+section .info small {
+	font-size: .7vw;
+	line-height: .7vw;
+}
+section .info a {
+	text-decoration: none;
+	color: rgb(255, 80, 80);
+}
+section .info a:visited {
+	color: rgb(255, 80, 80);
+}
+/* Seta que faz animação */
+.anim {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	animation: movement 1s ease-in-out infinite alternate;
+}
+.arrow {
+	height: 2vh;
+	width: 1vw;
+	align-self: center;
+	justify-self: center;
+	border: 7px solid rgb(167, 167, 167);
+	border-top-color: white;
+	border-left-color: white;
+	transform: rotate(45deg);
+}
+@keyframes movement {
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+h2 {
+	text-align: center;
+	font-size: 2vw;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+article {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+article div {
+	height: 60vh;
+	width: 29.2vw;
+	justify-self: center;
+	margin-bottom: 5%;
+}
+article img {
+	height: 33.5vh;
+}
+article iframe {
+	height: 33.5vh;
+	width: 29vw;
+}
+article a {
+	text-decoration: none;
+	color: rgb(255, 80, 80);
+}
+article a:visited {
+	color: rgb(255, 80, 80);
+}
+/* Rodapé */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(29, 29, 29);
+	color: white;
+	padding: 2% 0;
+}
+footer p {
+	color: rgb(255, 80, 80);
+	margin-bottom: 4%;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+	margin: 0 2%;
+	width: 12vw;
+	text-align: center;
+}
+footer a:hover {
+	color: rgb(255, 80, 80);
+}
+#links {
+	display: flex;
+	color: white;
+}
+.copy {
+	margin-top: 5%;
+}
