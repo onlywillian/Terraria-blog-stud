@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
 * {
 	margin: 0;
 	outline: 0;
@@ -9,6 +10,7 @@
 body{
     font-size: 20px;
 	font-family: 'Nunito', sans-serif;
+	overflow-x: hidden;
 }
 #menu {
 	display: flex;
@@ -101,6 +103,7 @@ article {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	margin-bottom: 10%;
 }
 article div {
 	height: 60vh;
@@ -152,4 +155,21 @@ footer a:hover {
 }
 .copy {
 	margin-top: 5%;
+}
+
+/* Animations */
+.left {
+	opacity: 0;
+	transform: translateX(-50%);
+}
+.right {
+	opacity: 0;
+	transform: translateX(50%);
+}
+
+@keyframes insertAnim {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
